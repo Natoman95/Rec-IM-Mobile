@@ -1,2 +1,4 @@
 .DS_Store
 NodeVersion.nvmrc
+www/.DS_Store
+www/lib/.DS_Store
