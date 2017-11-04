@@ -1,5 +1,6 @@
-import { FootNav } from './../footnav/footnav';
-import { HeadNav } from './../headnav/headnav';
+import { LoginPage } from './../pages/login/login';
+import { FootNav } from '../pages/footnav/footnav';
+import { HeadNav } from '../pages/headnav/headnav';
 import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -13,7 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     HeadNav,
-    FootNav
+    FootNav,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     HeadNav,
-    FootNav
+    FootNav,
+    LoginPage
   ],
   providers: [
     StatusBar,
