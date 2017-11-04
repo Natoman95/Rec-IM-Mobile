@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'foot-nav',
@@ -6,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FootNav {
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
 
   }
 
+  back() {
+    this.navCtrl.pop();
+  }
 }
