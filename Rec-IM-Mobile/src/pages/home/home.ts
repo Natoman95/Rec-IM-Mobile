@@ -1,3 +1,4 @@
+import { IndicentsPage } from './../incidents/incidents';
 import { SportsPage } from './../sports/sports';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
@@ -15,6 +16,10 @@ export class HomePage {
 
   sports() {
     this.navCtrl.push(SportsPage);
+  }
+
+  incidents() {
+    this.navCtrl.push(IndicentsPage);
   }
 
 }
