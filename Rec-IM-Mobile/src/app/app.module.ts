@@ -1,3 +1,4 @@
+import { GamesPage } from './../pages/games/games';
 import { LoginPage } from './../pages/login/login';
 import { FootNav } from '../pages/footnav/footnav';
 import { HeadNav } from '../pages/headnav/headnav';
@@ -15,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     HeadNav,
     FootNav,
-    LoginPage
+    LoginPage,
+    GamesPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     HeadNav,
     FootNav,
-    LoginPage
+    LoginPage,
+    GamesPage
   ],
   providers: [
     StatusBar,

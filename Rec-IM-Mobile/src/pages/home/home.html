@@ -4,14 +4,16 @@
 </ion-header>
 
 <ion-content>
-  <button ion-button full outline icon-start large>
-    <ion-icon name="walk"></ion-icon>
-    Games
-  </button>
-  <button ion-button full outline icon-start large>
-    <ion-icon name="medkit"></ion-icon>
-    Incidents
-  </button>
+  <ion-list>
+    <button ion-item (click)="games()">
+      <ion-icon name="walk" item-start color="primary"></ion-icon>
+      Games
+    </button>
+    <button ion-item>
+      <ion-icon name="medkit" item-start color="primary"></ion-icon>
+      Incidents
+    </button>
+  </ion-list>
 </ion-content>
 
 <ion-footer>
