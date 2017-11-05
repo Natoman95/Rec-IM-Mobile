@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'games-home',
+  selector: 'games-page',
   templateUrl: 'games.html'
 })
 

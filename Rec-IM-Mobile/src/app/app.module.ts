@@ -1,4 +1,5 @@
 import { GamesPage } from './../pages/games/games';
+import { SportsPage } from './../pages/sports/sports';
 import { LoginPage } from './../pages/login/login';
 import { FootNav } from '../pages/footnav/footnav';
 import { HeadNav } from '../pages/headnav/headnav';
@@ -17,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HeadNav,
     FootNav,
     LoginPage,
+    SportsPage,
     GamesPage
   ],
   imports: [
@@ -30,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HeadNav,
     FootNav,
     LoginPage,
+    SportsPage,
     GamesPage
   ],
   providers: [
@@ -37,8 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-  ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
+
 export class AppModule { }
