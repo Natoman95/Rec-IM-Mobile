@@ -4,7 +4,33 @@
 </ion-header>
 
 <ion-content>
+  <div class="timer">
+    <div>{{getHours()}} : {{getMinutes()}} : {{getSeconds()}}</div>
+  </div>
 
+  <ion-buttons>
+    <ion-row>
+      <ion-col>
+        <button ion-button full (click)="startTimer()">
+          Start
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full color="danger" (click)="stopTimer()">
+          Stop
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-buttons>
+
+  <ion-row>
+    <ion-col>
+      <div class="score">{{teamOneScore}}</div>
+    </ion-col>
+    <ion-col>
+      <div class="score">{{teamTwoScore}}</div>
+    </ion-col>
+  </ion-row>
 </ion-content>
 
 <ion-footer>

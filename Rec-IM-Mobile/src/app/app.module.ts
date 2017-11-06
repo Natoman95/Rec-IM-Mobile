@@ -6,6 +6,9 @@ import { SportsPage } from './../pages/sports/sports';
 import { LoginPage } from './../pages/login/login';
 import { FootNav } from '../pages/footnav/footnav';
 import { HeadNav } from '../pages/headnav/headnav';
+
+import { GameTimerService } from './../services/GameTimerService';
+
 import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -23,7 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SportsPage,
     GamesPage,
     IndicentsPage,
-    GameControlPage
+    GameControlPage,
   ],
   imports: [
     BrowserModule,
@@ -39,11 +42,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SportsPage,
     GamesPage,
     IndicentsPage,
-    GameControlPage
+    GameControlPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    GameTimerService,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
