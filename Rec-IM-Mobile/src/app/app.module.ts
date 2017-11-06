@@ -1,3 +1,4 @@
+import { GameControlPage } from './../pages/gamecontrol/gamecontrol';
 import { IndicentsPage } from './../pages/incidents/incidents';
 import { HomePage } from '../pages/home/home';
 import { GamesPage } from './../pages/games/games';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     SportsPage,
     GamesPage,
-    IndicentsPage
+    IndicentsPage,
+    GameControlPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     SportsPage,
     GamesPage,
-    IndicentsPage
+    IndicentsPage,
+    GameControlPage
   ],
   providers: [
     StatusBar,
