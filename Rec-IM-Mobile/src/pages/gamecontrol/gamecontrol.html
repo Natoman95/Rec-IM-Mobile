@@ -25,10 +25,101 @@
 
   <ion-row>
     <ion-col>
-      <div class="score">{{teamOneScore}}</div>
+      <div class="team-name">Wilson</div>
     </ion-col>
     <ion-col>
-      <div class="score">{{teamTwoScore}}</div>
+      <div class="team-name">Marv</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div class="score">{{getTeamOneScore()}}</div>
+    </ion-col>
+    <ion-col>
+      <div class="score">{{getTeamTwoScore()}}</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="addTeamOneScore()">
+          +
+        </button>
+      </ion-buttons>
+    </ion-col>
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="subTeamOneScore()">
+          -
+        </button>
+      </ion-buttons>
+    </ion-col>
+
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="addTeamTwoScore()">
+          +
+        </button>
+      </ion-buttons>
+    </ion-col>
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="subTeamTwoScore()">
+          -
+        </button>
+      </ion-buttons>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div class="timeout-label">Timeouts</div>
+    </ion-col>
+    <ion-col>
+      <div class="timeout-label">Timeouts</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div class="timeout">{{getTeamOneTimeouts()}}</div>
+    </ion-col>
+    <ion-col>
+      <div class="timeout">{{getTeamTwoTimeouts()}}</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="addTeamOneTimeouts()">
+          +
+        </button>
+      </ion-buttons>
+    </ion-col>
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="subTeamOneTimeouts()">
+          -
+        </button>
+      </ion-buttons>
+    </ion-col>
+
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="addTeamTwoTimeouts()">
+          +
+        </button>
+      </ion-buttons>
+    </ion-col>
+    <ion-col>
+      <ion-buttons>
+        <button ion-button full (click)="subTeamTwoTimeouts()">
+          -
+        </button>
+      </ion-buttons>
     </ion-col>
   </ion-row>
 </ion-content>
