@@ -22,8 +22,8 @@ export class FootNav {
 
   callGoPoAlert() {
     let alert = this.alertCtrl.create({
-      title: 'Call Gordon Police',
-      message: 'Call Gordon Police Emergency Number?',
+      title: 'Emergency Call',
+      message: 'Call Gordon Police's emergency number?',
       buttons: [
         {
           text: 'Cancel',
