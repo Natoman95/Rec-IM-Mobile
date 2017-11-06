@@ -14,3 +14,14 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+ion-title {
+  text-align: center;
+}
+
+// Ionic list dividers don't stretch the full width of a list item by default
+// This class disables the default dividers and adds new ones the same color but wider
+.full-item-divider[no-lines][ion-item] { 
+  border-bottom: 1px solid;
+  border-color: #c9c9c9;
+}

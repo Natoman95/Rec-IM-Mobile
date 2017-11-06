@@ -1,0 +1,19 @@
+<ion-navbar class="taller-nav">
+  <ion-buttons start>
+    <button ion-button class="larger-icons left-button-shift" (click)="back()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  </ion-buttons>
+
+  <ion-title>
+    <button ion-button class="larger-icons" [clear]="true" (click)="home()">
+      <ion-icon name="home"></ion-icon>
+    </button>
+  </ion-title>
+
+  <ion-buttons end>
+    <button ion-button class="larger-icons right-button-shift" (click)="callGoPoAlert()">
+      <ion-icon name="call"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-navbar>
