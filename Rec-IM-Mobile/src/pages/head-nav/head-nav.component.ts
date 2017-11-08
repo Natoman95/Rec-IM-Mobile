@@ -4,7 +4,7 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'head-nav',
-  templateUrl: 'headnav.component.html'
+  templateUrl: 'head-nav.component.html'
 })
 export class HeadNavComponent {
 
