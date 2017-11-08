@@ -31,6 +31,10 @@ export class GameControlPage {
     this.timerSvc.stopTimer();
   }
 
+  getTenths() {
+    return this.timerSvc.getTenths();
+  }
+  
   getSeconds() {
     return this.timerSvc.getSeconds();
   }
