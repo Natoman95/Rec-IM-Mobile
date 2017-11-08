@@ -1,12 +1,12 @@
-import { HomePage } from './../home/home';
+import { HomeComponent } from './../home/home.component';
 import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'foot-nav',
-  templateUrl: 'footnav.html'
+  templateUrl: 'foot-nav.component.html'
 })
-export class FootNav {
+export class FootNavComponent {
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
@@ -17,7 +17,7 @@ export class FootNav {
   }
 
   home() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(HomeComponent);
   }
 
   callGoPoAlert() {

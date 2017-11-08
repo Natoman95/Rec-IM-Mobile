@@ -1,13 +1,13 @@
-import { GameTimerService } from './../../services/GameTimerService';
+import { GameTimerService } from './../../services/game-timer.service';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'game-control-page',
-  templateUrl: 'gamecontrol.html'
+  selector: 'game-control',
+  templateUrl: 'game-control.component.html'
 })
 
-export class GameControlPage {
+export class GameControlComponent {
 
   private teamOneScore: number = 0;
   private teamTwoScore: number = 0;
